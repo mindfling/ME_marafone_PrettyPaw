@@ -5,13 +5,14 @@ MethEd Educational online Web school JavaScript Pretty Paw project
 # WEBPACK
 
 ссылка на youtube
-https://youtu.be/o8KMucDpSno
+- https://youtu.be/o8KMucDpSno
+- https://www.youtube.com/channel/UCkwr7q984xnJvL0m_nKnT5A
 
 ссылка на MethEd
-https://methed.ru
-https://web.methed.ru
-https://js.methed.ru
-https://my.methed.ru
+- https://methed.ru
+- https://web.methed.ru
+- https://js.methed.ru
+- https://my.methed.ru
 
 
 Для установки пакетов используйте команду
