@@ -1,7 +1,22 @@
-/**
+/* inter-700 - latin_cyrillic */
 @font-face {
-  font-family: 'Montserrat';
-  src: url('../fonts/montserrat-v23-latin_cyrillic-regular.woff2') format('woff2'),
-    url('../fonts/montserrat-v23-latin_cyrillic-regular.woff') format('woff');
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 300;
+  src: local(''),
+    url('../fonts/mulish-light.woff2') format('woff2'),
+    url('../fonts/mulish-light.woff') format('woff');
+  font-display: swap;
 }
-*/
+
+
+/* inter-700 - latin_cyrillic */
+@font-face {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 1000;
+  src: local(''),
+    url('../fonts/mulish-extrablack.woff2') format('woff2'),
+    url('../fonts/mulish-extrablack.woff') format('woff');
+  font-display: swap;
+}
