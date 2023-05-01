@@ -7,7 +7,17 @@ MethEd Educational online Web school JavaScript Pretty Paw project
 ссылка на youtube
 https://youtu.be/o8KMucDpSno
 
-Для установки пакетов используйте команду npm install
+ссылка на MethEd
+https://methed.ru
+https://web.methed.ru
+https://js.methed.ru
+https://my.methed.ru
+
+
+Для установки пакетов используйте команду
+```
+npm install
+```
 
 ## Команды
 
@@ -31,3 +41,10 @@ npm run build-prod
 npm run clear
 ```
 
+
+##### use terminal
+```
+npm i
+npm start
+```
+press **Ctrl+C** for Exit
