@@ -1,5 +1,10 @@
 body {
   background-color: $back;
-  color: $text;
+  color: $main;
+}
+
+.header {
+  display: block;
+  background-color: $main;
 }
 

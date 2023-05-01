@@ -14,18 +14,64 @@
   <title>Pretty Paw</title>
 </head>
 <body>
-  <header>
-
+  <!-- layout mobile first -->
+  <header class="header">
+    <div class="container header__container">
+      <img src="img/logo-desktop.svg" alt="Оранжевый логотип" class="header__logo">
+      <img src="img/logo-mobile.svg" alt="Оранжевый логотип мобил" class="header__logo">
+      
+      <nav class="header__nav navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Главная</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#about" class="navigation__link">О&nbsp;зоосаде</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#history" class="navigation__link">История</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#dids" class="navigation__link">Добрые&nbsp;дела</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#career" class="navigation__link">Карьера</a>
+          </li>
+        </ul>
+        
+        <button class="navigation__button" aria-label="Открыть меню" title="Открыть мобильное меню">
+          <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect y="0.846161" width="20" height="1.36752" fill="white"/>
+            <rect y="6.31622" width="20" height="1.36752" fill="white"/>
+            <rect y="11.7863" width="20" height="1.36752" fill="white"/>
+          </svg>
+        </button>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <section>
-      
+    <section class="hero">
+      <div class="container hero__container"></div>
+    </section>
+    
+    <section class="about">
+      <div class="container about__container"></div>
+    </section>
+    
+    <section class="location">
+
+    </section>
+    
+    <section class="career">
+      <div class="container career__container"></div>
     </section>
   </main>
 
-  <footer>
-
+  <footer class="footer">
+    <div class="container footer__container">
+      
+    </div>
   </footer>
 </body>
 </html>
