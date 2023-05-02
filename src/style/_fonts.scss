@@ -1,22 +1,24 @@
-/* inter-700 - latin_cyrillic */
-@font-face {
-  font-family: 'Mulish';
-  font-style: normal;
-  font-weight: 300;
-  src: local(''),
-    url('../fonts/mulish-light.woff2') format('woff2'),
-    url('../fonts/mulish-light.woff') format('woff');
-  font-display: swap;
-}
+// /* inter-700 - latin_cyrillic */
+// @font-face {
+//   font-family: 'Mulish';
+//   font-style: normal;
+//   font-weight: 300;
+//   src: local(''),
+//     url('../fonts/mulish-light.woff2') format('woff2'),
+//     url('../fonts/mulish-light.woff') format('woff');
+//   font-display: swap;
+// }
 
 
-/* inter-700 - latin_cyrillic */
-@font-face {
-  font-family: 'Mulish';
-  font-style: normal;
-  font-weight: 1000;
-  src: local(''),
-    url('../fonts/mulish-extrablack.woff2') format('woff2'),
-    url('../fonts/mulish-extrablack.woff') format('woff');
-  font-display: swap;
-}
+// /* inter-700 - latin_cyrillic */
+// @font-face {
+//   font-family: 'Mulish';
+//   font-style: normal;
+//   font-weight: 900;
+//   src: local(''),
+//     url('../fonts/mulish-extrablack.woff2') format('woff2'),
+//     url('../fonts/mulish-extrablack.woff') format('woff');
+//   font-display: swap;
+// }
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;900;1000&display=swap');
