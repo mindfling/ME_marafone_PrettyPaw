@@ -8,9 +8,11 @@
   <!-- <link rel="preload" href="fonts/mulish-extrablack.woff2" as="font" type="font/woff2" crossorigin> -->
   <!-- <link rel="preload" href="fonts/mulish-light.woff2" as="font" type="font/woff2" crossorigin> -->
 
+  <!--
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;900;1000&display=swap" rel="stylesheet">   
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;900;1000&display=swap" rel="stylesheet">
+  -->
   
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
   <link rel="icon" href="img/favicon.png" type="image/png">
@@ -130,11 +132,9 @@
             </ul>
             <!-- If we need pagination -->
             <div class="about__slider-pagination swiper-pagination"></div>
-
             <!-- If we need navigation buttons -->
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
-
             <!-- If we need scrollbar -->
             <div class="swiper-scrollbar"></div>
           </div>
@@ -172,7 +172,61 @@
     
     <section class="career">
       <!-- карьера у нас -->
-      <div class="container career__container"></div>
+      <div class="container career__container">
+        <div class="career__content">
+          <h2 class="career__title">Карьера у нас</h2>
+          <p class="career__description">Карьера в компании «Pretty Paws» может предоставить много интересных и перспективных возможностей для людей, увлеченных животными и желающих развиваться в этой области.</p>
+          <a href="#career" class="career__link link-main" title="Перейти на страницу Карьера в нашей компании">Подробрнее</a>
+        </div>
+        
+        <!-- Slider main container -->
+        <div class="career__slider swiper">
+          <!-- Additional required wrapper -->
+          <ul class="career__image-list swiper-wrapper">
+            <!-- Slides -->
+            <li class="career__image-item swiper-slide">
+              <picture class="career__image-wrapper">
+                <img src="img/career/parrots2.jpg" alt="Два Попугаи" class="career__image" loading="lazy">
+              </picture>
+            </li>
+            <li class="career__image-item swiper-slide">
+              <picture class="career__image-wrapper">
+                <img src="img/career/giraffe2.jpg" alt="Голова жирафа" class="career__image" loading="lazy">
+              </picture>
+            </li>
+            <li class="career__image-item swiper-slide">
+              <picture class="career__image-wrapper">
+                <img src="img/career/giraffes.jpg" alt="Жирафы в вольере" class="career__image" loading="lazy">
+              </picture>
+            </li>
+            <li class="career__image-item swiper-slide">
+              <picture class="career__image-wrapper">
+                <img src="img/career/leo2.jpg" alt="Два львы" class="career__image" loading="lazy">
+              </picture>
+            </li>
+            <li class="career__image-item swiper-slide">
+              <picture class="career__image-wrapper">
+                <img src="img/career/meerkat.jpg" alt="Два суриката" class="career__image" loading="lazy">
+              </picture>
+            </li>
+            <li class="career__image-item swiper-slide">
+              <picture class="career__image-wrapper">
+                <img src="img/career/flamingos.jpg" alt="Много фламинго" class="career__image" loading="lazy">
+              </picture>
+            </li>
+            <li class="career__image-item swiper-slide">
+              <picture class="career__image-wrapper">
+                <img src="img/career/zebra.jpg" alt="Зебра" class="career__image" loading="lazy">
+              </picture>
+            </li>
+            <li class="career__image-item swiper-slide">
+              <picture class="career__image-wrapper">
+                <img src="img/career/elephant.jpg" alt="Слоны" class="career__image" loading="lazy">
+              </picture>
+            </li>
+          </ul>
+        </div>          
+      </div>
     </section>
   </main>
 
