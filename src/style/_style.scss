@@ -1,129 +1,106 @@
-* {
+html {
+  position: relative;
   box-sizing: border-box;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: Mulish, sans-serif;
+  font-weight: 300;
   background-color: $back;
   color: $main;
-}
-
-.container {
-  padding: 0 30px;
-}
-
-.header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: $main;
-  min-height: 80px;
-}
-
-.header__container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  // border: 1px solid lawngreen;
-}
-
-.header__nav {
-  display: flex;
-  justify-content: space-between;
-  // border: 1px solid orange;
+  line-height: 1.4;
+  font-size: 16px;
+  
+  @include lg {
+    font-size: 20px;
+  }
+  
 }
 
 
-.navigation__list {
-  display: flex;
-  gap: 8px;
-}
-.navigation__item {
-  color: $second;
-  list-style: none;
-}
-.navigation__link {
-  font-family: 'Mulish', sans-serif;
-  color: $second;
-}
-.navigation__link:hover {
-  text-decoration: none;
+img, svg, video {
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
 }
 
-.navigation__button {
-  display: block;
-  width: 50px;
-  height: 50px;
-  border: 1px solid transparent;
-  background-color: transparent;
+
+button {
+  padding: 0;
   cursor: pointer;
-  transition: all 200ms ease;
-  transform: scale(100%);
-}
-.navigation__button:hover {
-  transform: scale(115%);
+  border: none;
+  background-color: transparent;
 }
 
-.header__title {
-  color: $back;
-  font-family: Mulish;
-  font-style: normal;
-  font-weight: 1000;
-  font-size: 40px;
-  line-height: 130%;
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
   margin: 0;
 }
 
-.header__description {
-  font-family: Mulish;
-  font-weight: 300;
-  color: $second;
+h1,
+h2,
+h3,
+p,
+figure,
+fieldset {
+  margin: 0;
+}
+
+iframe {
+  border: none;
+}
+
+/* Доступно скрываю элементы */
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
 }
 
 
-
-.hero {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
-  width: 100%;
-  height: 554px;
-  background: url(../img/hero/Rectangle_desk.jpg) center/cover no-repeat;
-  background-color: $main;
-  background-size: cover;
+/*
+Пример контейнера
+Если контейнер 1180px по макету,
+то для max-width прибавляем паддинги 30px*2, 
+в итоге 1240px
+Чтобы контент не прижимался к краям экрана
+*/
+.container {
+  padding: 0 16px;
+  
+  @include sm {
+    padding: 0 24px;
+  }
+  
+  @include md {
+    padding: 0 32px;
+  }
+  
+  @include xl {
+    padding: 0 30px;
+  }
+  
+  /* добавили */
+  @include xxl {
+    padding: 0 60px;
+    max-width: 2560px;
+    margin: 0 auto;
+  }
 }
 
-
-.about__link {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 19px 20px;
-  gap: 7px;
-  max-width: 177px;
-  height: 36px;
-  background: $second;
-  color: $back;
-  text-decoration: none;
-  border: 2px solid $second;
-  border-radius: 50px;
-  font-family: 'Mulish';
-  font-style: normal;
-  font-weight: 1000;
-  font-size: 16px;
-  line-height: 140%;
-  transition: all 200ms ease;
-}
-.about__link::after {
-  display: block;
-  content: '';
-  width: 16px;
-  height: 16px;
-  background: url(../img/arrow-right.svg);
-}
-.about__link:hover {
-  border: 2px solid $main;
-}
 
 
 ::selection {
