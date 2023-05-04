@@ -1,4 +1,40 @@
 $back: #FFAA05;
+$back: #ffaa05;
 $main: #000000;
 $second: #ffffff;
+
+// * global media mixin numbers from bootstrap5
+
+// * media max-width mixin
+$desktop: 1440px;
+$laptop: 1024px;
+$tablet: 768px;
+$mobile: 540px;
+
+
+@mixin desktop {
+  @media (max-width: #{$desktop}) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (max-width: #{$laptop}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: #{$tablet}) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: #{$mobile}) {
+    @content;
+  }
+}
+
+// code is from here Inspired one https://github.com/mindfling/ME_marafone_inspiredOne/blob/main/src/style/_var.scss
 
