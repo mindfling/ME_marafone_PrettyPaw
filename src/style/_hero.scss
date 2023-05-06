@@ -37,6 +37,71 @@
   }
   
   &__container {
-    min-height: 500px;
+    display: flex;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    min-height: 554px;
+    padding-top: 120px;
+    padding-bottom: 50px !important;
+    @include xl {
+      min-height: 780px;
+    }
+    @include xxl {
+      min-height: 100vh;
+    }
+  }
+  
+  &__title {
+    z-index: 10;
+    font-family: Mulish, sans-serif;
+    font-style: normal;
+    font-weight: 1000;
+    line-height: 130%;
+    text-transform: uppercase;
+    color: $back;
+    font-size: 40px;
+    
+    @include lg {
+      font-size: 52px;
+    }
+    @include xxl {
+      font-size: 75px; // ?
+    }
+  }
+  
+  &__subtitle {
+    z-index: 10;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 300;
+    line-height: 130%;
+    text-transform: uppercase;
+    color: $second;    
+    font-size: 20px;
+    
+    @include lg {
+      font-size: 40px;
+    }
+  }
+  
+  
+  // * зетенение внизу баннера
+  &::before {
+    position: absolute;
+    display: block;
+    content: '';
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100px;
+    width: 100%;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 1%, #000000 90%);
+  }
+  
+  &__video-bg {
+    z-index: 8;
+    display: none; // todo
   }
 }
