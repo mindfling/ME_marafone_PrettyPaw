@@ -1,0 +1,19 @@
+.header {
+  display: block;
+  background: $main;
+  color: $second;
+  
+  height: 80px;
+  
+  @include xl {
+    height: 116px;
+  }
+  
+  &__container {
+    height: 100%;
+    // border: 1px solid lawngreen;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

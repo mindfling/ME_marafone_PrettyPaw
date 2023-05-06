@@ -1,9 +1,17 @@
-$back: #FFAA05;
+// * global colors
 $back: #ffaa05;
 $main: #000000;
 $second: #ffffff;
 
-// * global media mixin numbers from bootstrap5 by Maks
+// * global media mixin bootstrap5 breakpoints by Maks
+// using mobile first
+
+/*
+@mixin xs (320px) {
+  
+}
+*/
+
 @mixin sm {
   @media (min-width: 576px) {
     @content;

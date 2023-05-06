@@ -1,0 +1,40 @@
+.navigation {
+  display: flex;
+  
+  &__list {
+    display: none;
+    
+    @include xl {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+    }
+  }
+  
+  &__item {
+    
+  }
+  
+  &__link {
+    @include xl {
+      font-weight: 1000;
+      font-size: 16px;
+      // line-height: 140%;
+      padding: 20px 32px 19px;
+      /* yellow */
+
+      border: 2px solid #FFAA05;
+      border-radius: 80px;      
+    }
+    
+  }
+  
+  
+  &__button {
+    display: block;
+    @include xl {
+      display: none;
+    }
+  }
+}

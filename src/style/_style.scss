@@ -17,6 +17,8 @@ body {
   background-color: $back;
   color: $main;
   line-height: 1.4;
+  
+  // @include xs
   font-size: 16px;
   
   @include lg {
@@ -77,21 +79,32 @@ iframe {
 Чтобы контент не прижимался к краям экрана
 */
 .container {
+  // >=320
   padding: 0 16px;
   
+  // >=756
   @include sm {
     padding: 0 24px;
   }
   
+  // >= 768
   @include md {
     padding: 0 32px;
   }
   
+  // >= 1024
+  /*
+  @include lg {
+    padding: 0 32px;
+  }
+  */
+  
+  // >=1240
   @include xl {
     padding: 0 30px;
   }
   
-  /* добавили */
+  /* >=1600 добавили */
   @include xxl {
     padding: 0 60px;
     max-width: 2560px;
@@ -129,13 +142,6 @@ iframe {
 }
 .link-main:hover {
   border: 2px solid $main;
-}
-
-
-.header {
-  display: block;
-  background: #000;
-  color: #fff;
 }
 
 
