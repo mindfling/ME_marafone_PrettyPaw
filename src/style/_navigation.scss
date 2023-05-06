@@ -14,7 +14,7 @@
   }
   
   &__item {
-    
+    display: block;
   }
   
   &__link {
@@ -23,36 +23,34 @@
       font-size: 16px;
       // line-height: 140%;
       padding: 20px 32px 19px;
-      /* yellow */
-
-      border: 2px solid #FFAA05;
-      border-radius: 80px;      
+      border: 2px solid $back;
+      border-radius: 80px;
+      background: $main;
+      transition: all 200 ease;
     }
-    
+    &:hover {
+      background: $back;
+    }
   }
   
   
   &__button {
     display: block;
-    // border: 1px solid magenta;
     width: 36px;
     height: 36px;
-    
-    &_closed {
-      background: url(../img/menu_span.svg) center/contain no-repeat;
-    }
+    background: url(../img/menu_open.svg) center/contain no-repeat;
 
-    &_opened {
-      background: url(../img/menu_cross.svg) center/contain no-repeat;
+    &_active {
+      background: url(../img/menu_close.svg) center/contain no-repeat;
     }
     
     @include lg {
-      // border: 1px solid lawngreen;
       width: 50px;
       height: 50px;
     }
     
     @include xl {
+      // скрываем кнопку на 1240px
       display: none;
     }
   }
