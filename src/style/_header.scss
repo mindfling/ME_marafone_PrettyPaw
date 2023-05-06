@@ -1,12 +1,16 @@
 .header {
+  position: absolute;
+  z-index: 55;
   display: block;
-  background: $main;
-  color: $second;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 22px 0;
+  background-color: $main;
   
-  height: 80px;
-  
-  @include xl {
-    height: 116px;
+  @include lg {
+    padding: 30px 0;
   }
   
   &__container {
@@ -15,5 +19,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+  
+  &__logo {
+    width: 200px;
+    
+    @include lg {
+      width: 360px;
+    }
   }
 }

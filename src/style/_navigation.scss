@@ -1,5 +1,6 @@
 .navigation {
   display: flex;
+  color: $second;
   
   &__list {
     display: none;
@@ -33,6 +34,24 @@
   
   &__button {
     display: block;
+    // border: 1px solid magenta;
+    width: 36px;
+    height: 36px;
+    
+    &_closed {
+      background: url(../img/menu_span.svg) center/contain no-repeat;
+    }
+
+    &_opened {
+      background: url(../img/menu_cross.svg) center/contain no-repeat;
+    }
+    
+    @include lg {
+      // border: 1px solid lawngreen;
+      width: 50px;
+      height: 50px;
+    }
+    
     @include xl {
       display: none;
     }
