@@ -1,0 +1,42 @@
+.hero {
+  position: relative;
+  background-image: url('../img/hero/banner@1x.tn.jpg');
+  background-image: image-set(
+    url('../img/hero/banner@2x.tn.webp') 2x,
+    url('../img/hero/banner@1x.tn.webp') 1x,
+    url('../img/hero/banner@2x.tn.jpg') 2x,
+    url('../img/hero/banner@1x.tn.jpg') 1x
+  );
+  background-size: cover;
+  background-position: center;
+  
+  @include md {
+    background-image: url('../img/hero/banner-xl@1x.tn90.jpg');
+    background-image: image-set(
+      url('../img/hero/banner-xl@1x.tn90.webp') 1x,
+      url('../img/hero/banner-xl@1x.tn90.jpg') 1x
+    );
+  }
+ 
+  @include xl {
+    background-image: url('../img/hero/banner-xl@2x.tn70.jpg');
+    background-image: image-set(
+      url('../img/hero/banner-xl@4x.tn90.webp') 2x,
+      url('../img/hero/banner-xl@2x.tn80.webp') 1x,
+      url('../img/hero/banner-xl@4x.tn70.jpg') 2x,
+      url('../img/hero/banner-xl@2x.tn70.jpg') 1x
+    );
+  }
+  
+  @include xxl {
+    background-image: url('../img/hero/banner-xl@4x.tn70.jpg');
+    background-image: image-set(
+      url('../img/hero/banner-xl@4x.tn90.webp') 2x,
+      url('../img/hero/banner-xl@4x.tn70.jpg') 1x
+    );
+  }
+  
+  &__container {
+    min-height: 500px;
+  }
+}
