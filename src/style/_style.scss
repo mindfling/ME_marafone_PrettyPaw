@@ -90,16 +90,19 @@ iframe {
 */
 .container {
   // >=320
-  padding: 0 16px;
+  padding-left: 16px;
+  padding-right: 16px;
   
   // >=756
   @include sm {
-    padding: 0 24px;
+    padding-left: 24px;
+    padding-right: 24px;
   }
   
   // >= 768
   @include md {
-    padding: 0 32px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
   
   // >= 1024
@@ -111,12 +114,14 @@ iframe {
   
   // >=1240
   @include xl {
-    padding: 0 30px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
   
   /* >=1600 добавили */
   @include xxl {
-    padding: 0 60px;
+    padding-left: 60px;
+    padding-right: 60px;
     max-width: 2560px;
     margin: 0 auto;
   }
