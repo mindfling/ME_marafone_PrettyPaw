@@ -37,14 +37,15 @@
   }
   
   &__container {
-    display: flex;
     z-index: 10;
+    display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
+    gap: 24px;
     min-height: 554px;
     padding-top: 120px;
-    padding-bottom: 50px !important;
+    padding-bottom: 50px !important; // ? ПОЧЕМУ ТАК ??
     @include xl {
       min-height: 780px;
     }
@@ -55,10 +56,11 @@
   
   &__title {
     z-index: 10;
+    // !!!! здесь Mulish при 1000 НЕ ПРИМЕНИЛСЯ ;)
     font-family: Mulish, sans-serif;
     font-style: normal;
     font-weight: 1000;
-    line-height: 130%;
+    line-height: 1;
     text-transform: uppercase;
     color: $back;
     font-size: 40px;
@@ -73,10 +75,10 @@
   
   &__subtitle {
     z-index: 10;
-    font-family: 'Mulish';
-    font-style: normal;
+    // font-family: 'Mulish' sans-serif;
+    // font-style: normal;
     font-weight: 300;
-    line-height: 130%;
+    line-height: 1;
     text-transform: uppercase;
     color: $second;    
     font-size: 20px;
@@ -89,19 +91,18 @@
   
   // * зетенение внизу баннера
   &::before {
-    position: absolute;
     display: block;
     content: '';
+    position: absolute;
     left: 0;
     bottom: 0;
     right: 0;
-    height: 100px;
+    height: 50%;
     width: 100%;
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 1%, #000000 90%);
   }
   
   &__video-bg {
     z-index: 8;
-    display: none; // todo
   }
 }
