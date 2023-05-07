@@ -15,24 +15,26 @@
   
   &__item {
     display: block;
+    
   }
   
   &__link {
     @include xl {
       font-weight: 1000;
       font-size: 16px;
-      // line-height: 140%;
       padding: 20px 32px 19px;
       border: 2px solid $back;
       border-radius: 80px;
       background: $main;
       transition: all 200 ease;
+      &_active {
+        background: $back;
+      }
     }
     &:hover {
       background: $back;
     }
   }
-  
   
   &__button {
     display: block;
