@@ -56,21 +56,28 @@
 }
 .debug__block_lg {
   @include lg {
-    z-index: 930;
-    background-color: darkblue;
+    z-index: 940;
+    background-color: rgb(15, 15, 196);
     color: #fff;
   }
 }
 .debug__block_xl {
   @include xl {
-    z-index: 940;
+    z-index: 950;
+    background-color: darkblue;
+    color: #fefefe;
+  }
+}
+.debug__block_desk {
+  @media (min-width: 1440px) {
+    z-index: 960;
     background-color: darkmagenta;
     color: #fff;
   }
 }
 .debug__block_xxl {
   @include xxl {
-    z-index: 950;
+    z-index: 970;
     background-color: magenta;
   }
 }

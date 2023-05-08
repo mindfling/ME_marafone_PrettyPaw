@@ -6,36 +6,43 @@ $second: #ffffff;
 // * global media mixin bootstrap5 breakpoints by Maks
 // using mobile first
 
-/*
+// * 320 mobile
+/* *
 @mixin xs (320px) {
-  
 }
 */
 
+// * 576 sm
 @mixin sm {
   @media (min-width: 576px) {
     @content;
   }
 }
 
+// * 768 md tablet
 @mixin md {
   @media (min-width: 768px) {
     @content;
   }
 }
 
+// * 1024 lg laptop
 @mixin lg {
   @media (min-width: 1024px) {
     @content;
   }
 }
 
+// * 1240 xl
 @mixin xl {
   @media (min-width: 1240px) {
     @content;
   }
 }
 
+// * 1440 desktop
+
+// * 1600 xxl
 @mixin xxl {
   @media (min-width: 1600px) {
     @content;
