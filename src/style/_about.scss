@@ -1,0 +1,132 @@
+.about {
+  padding: 80px 0;
+  color: #fff;
+  
+  @include lg {
+    padding: 100px 0;
+  }
+  
+  &__container {
+  }
+  
+  &__title {
+    font-weight: 1000;
+    font-size: 32px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: $second;
+    margin-bottom: 24px;
+    
+    @include lg {
+      font-size: 52px;
+      margin-bottom: 40px; //
+    }
+  }
+  
+  
+  &__content {
+    // todo grid
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    // svg the paw inside bg content
+    margin-bottom: 13px;
+    padding-bottom: 27px;
+    background-image: url('../img/about/the-paw.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+  }
+    
+  
+  &__link {
+    margin-bottom: 40px;
+  }
+  
+  &__description {
+    color: #000;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 24px;
+  }
+  
+  
+  &__count-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+  }
+  &__count-item {
+    display: block;
+    min-width: 120px;
+    min-height: 55px;
+    
+    @include lg {
+      min-width: 200px;
+      min-height: 75px;
+    }
+  }
+  
+  &__count {
+    font-family: 'Mulish', sans-serif;
+    font-style: normal;
+    font-weight: 1000;
+    line-height: 1;
+    text-transform: uppercase;
+    color: $second;
+    margin-bottom: 16px;
+    font-size: 40px;
+
+    @include lg {
+      font-size: 52px;
+    }
+  }
+  &__count-desc {
+    font-family: 'Mulish', sans-serif;
+    font-style: normal;
+    font-weight: 1000;
+    line-height: 1;
+    font-size: 16px;
+
+    @include lg {
+      font-size: 20px;
+    }
+  }
+
+  
+  
+  &__image {
+    border-radius: 16px;
+  }
+  
+  &__image-item {
+  }
+  
+  &__image-list {
+  }
+  
+  &__image-wrapper {
+    display: block;
+    // border: 1px solid rebeccapurple;
+    width: 288px;
+    height: 258px;
+    border-radius: 16px;    
+  }
+
+  
+  &__picture {
+  }
+  
+  &__slider {
+  }
+  
+  &__slider-pagination {
+  }
+
+}
