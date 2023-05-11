@@ -6,79 +6,78 @@
   z-index: 900;
 }
 
-
 .debug__block {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  
-  width: 100px;
-  height: 100px;
-  
   position: absolute;
   top: 0;
   left: 0;
-
+  // display: flex;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
   color: #000;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 40px;
   font-weight: 900;
-
   opacity: 1 ;
 }
 
 .debug__text {
   display: block;
   font-size: 20px;
+  font-weight: 700;
+}
+.debug__size {
+  display: block;
+  font-size: 40px;
+  font-weight: 900;
 }
 
 
 .debug__block_mobile {
   @media (min-width: 320px) {
-    z-index: 910;
-    background-color: lawngreen;
+    display: flex;
+    background-color: #FF8700;
   }
-  
 }
 .debug__block_sm {
   @include sm {
-    z-index: 920;
-    background: lime;
+    display: flex;
+    background: #FFD300;
   }
 }
 .debug__block_md {
   @include md {
-    z-index: 930;
-    background-color: green;
-    color: #fff;
+    display: flex;
+    background-color: #DEFF0A;
   }
 }
 .debug__block_lg {
   @include lg {
-    z-index: 940;
-    background-color: rgb(15, 15, 196);
-    color: #fff;
+    display: flex;
+    background-color: #A1FF0A;
   }
 }
 .debug__block_xl {
   @include xl {
-    z-index: 950;
-    background-color: darkblue;
-    color: #fefefe;
+    display: flex;
+    background-color: #007FFF;
+    color: #040404;
   }
 }
 .debug__block_desk {
   @media (min-width: 1440px) {
-    z-index: 960;
-    background-color: darkmagenta;
+    display: flex;
+    background-color: #580AFF;
     color: #fff;
   }
 }
 .debug__block_xxl {
   @include xxl {
-    z-index: 970;
-    background-color: magenta;
+    display: flex;
+    background-color: #BE0AFF;
+    color: #efefef;
   }
 }
   
