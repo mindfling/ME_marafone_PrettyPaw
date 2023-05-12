@@ -25,47 +25,75 @@
   
   
   &__content {
+    display: grid;
     // todo grid
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    // svg the paw inside bg content
     margin-bottom: 13px;
     padding-bottom: 27px;
+    // svg the paw inside bg content
     background-image: url('../img/about/the-paw.svg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center bottom;
+    
+    @include lg {
+      grid-template-columns: 1fr;
+      grid-template-rows: min-content;
+      gap: 40px;
+      margin-bottom: 0;
+      padding-bottom: 0;
+      grid-area: content;
+      grid-template-areas:
+        'description',
+        'list',
+        'link';
+      background-position: center;
+    }
+  
+    @include xl {
+      gap: 60px;
+    }
   }
     
-  
-  &__link {
-    margin-bottom: 40px;
-  }
+
   
   &__description {
-    color: #000;
     font-family: 'Mulish';
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
     line-height: 1.4;
+    color: $main;
     margin-bottom: 24px;
+    
+    @include md {
+    }
+    
+    @include lg {
+      margin-bottom: 40px;
+    }
+    
+    @include xl {
+      margin-bottom: 60px;
+    }
   }
+
   
+  &__link {
+    margin-bottom: 40px;
+  }  
+
   
   &__count-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 120px);
     gap: 20px;
+    font-weight: 1000;
+    color: $second;
   }
   &__count-item {
-    display: block;
-    min-width: 120px;
-    min-height: 55px;
+    // display: block;
+    // min-width: 120px;
+    // min-height: 55px;
     
     @include lg {
       min-width: 200px;
@@ -74,9 +102,6 @@
   }
   
   &__count {
-    font-family: 'Mulish', sans-serif;
-    font-style: normal;
-    font-weight: 1000;
     line-height: 1;
     text-transform: uppercase;
     color: $second;
@@ -88,9 +113,6 @@
     }
   }
   &__count-desc {
-    font-family: 'Mulish', sans-serif;
-    font-style: normal;
-    font-weight: 1000;
     line-height: 1;
     font-size: 16px;
 

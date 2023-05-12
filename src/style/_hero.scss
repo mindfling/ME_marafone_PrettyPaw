@@ -39,17 +39,26 @@
   
   &__container {
     z-index: 10;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
-    gap: 24px;
+    // gap: 24px;
+    // todo make вместо margin адаптировать gap
     min-height: 554px;
     padding-top: 120px;
     padding-bottom: 50px;
+    
+    @include lg {
+      padding-bottom: 74px;
+    }
+    
     @include xl {
       min-height: 780px;
+      padding-bottom: 100px;
     }
+    
     @include xxl {
       min-height: 100vh;
     }
@@ -61,16 +70,20 @@
     // font-family: Mulish, sans-serif;
     // font-style: normal;
     font-weight: 1000;
+    font-size: 40px;
     line-height: 1;
     text-transform: uppercase;
     color: $back;
-    font-size: 40px;
+    margin-bottom: 24px;
     
     @include lg {
       font-size: 52px;
+      margin-bottom: 40px;
     }
+    
     @include xxl {
       font-size: 75px;
+      margin-bottom: 58px;
     }
   }
   
@@ -80,10 +93,10 @@
     // font-family: 'Mulish' sans-serif;
     // font-style: normal;
     font-weight: 300;
+    font-size: 20px;
     line-height: 1;
     text-transform: uppercase;
-    color: $second;    
-    font-size: 20px;
+    color: $second;   
     
     @include lg {
       font-size: 40px;
