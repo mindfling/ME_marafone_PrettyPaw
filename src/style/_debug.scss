@@ -1,3 +1,15 @@
+// * my debug colors
+
+$orange: #FF8700;
+$yellow: #FFD300;
+$lime:    #DEFF0A;
+$lawngreen: #A1FF0A;
+$skyblue: #007FFF;
+$violet: #580AFF;
+$magenta: #BE0AFF;
+
+
+// * debug blocks
 .debug {
   position: fixed;
   top: 0;
@@ -44,7 +56,7 @@
 .debug__block_sm {
   @include sm {
     display: flex;
-    background: #FFD300;
+    background-color: #FFD300;
   }
 }
 .debug__block_md {
@@ -70,20 +82,55 @@
   @media (min-width: 1440px) {
     display: flex;
     background-color: #580AFF;
-    color: #fff;
+    color: #efefef;
   }
 }
 .debug__block_xxl {
   @include xxl {
     display: flex;
     background-color: #BE0AFF;
-    color: #efefef;
+    color: #dfdfdf;
   }
 }
   
 
+// * до 320px скрываем дебаги
 @media (max-width: 319px) {
-  .debug {
+  .debug,
+  .debug__block {
+    display: none;
+  }
+}
+
+@media (min-width: 576px) {
+  .debug__block_mobile {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .debug__block_sm {
+    display: none;
+  }
+}
+@include lg {
+  .debug__block_md {
+    display: none;
+  }
+}
+@include xl {
+  .debug__block_lg {
+    display: none;
+  }
+}
+@media (min-width: 1440px) {
+  .debug__block_xl {
+    display: none;
+  }
+  
+}
+@include xxl {
+  .debug__block_xl,
+  .debug__block_desk {
     display: none;
   }
 }
