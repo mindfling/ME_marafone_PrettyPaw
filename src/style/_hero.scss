@@ -67,8 +67,8 @@
   &__title {
     z-index: 10;
     // !!!! здесь Mulish при 1000 НЕ ПРИМЕНИЛСЯ ;)
-    // font-family: Mulish, sans-serif;
-    // font-style: normal;
+    font-family: Mulish;
+    font-style: normal;
     font-weight: 1000;
     font-size: 40px;
     line-height: 1;
@@ -89,9 +89,8 @@
   
   &__subtitle {
     z-index: 10;
-    // ! а здесь Mulish 300 применяется нормально )))
-    // font-family: 'Mulish' sans-serif;
-    // font-style: normal;
+    // * а здесь Mulish 300 применяется нормально )))
+    font-family: 'Mulish';
     font-weight: 300;
     font-size: 20px;
     line-height: 1;
