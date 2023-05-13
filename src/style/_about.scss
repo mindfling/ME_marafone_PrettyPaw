@@ -170,6 +170,29 @@
    
   &__image {
     border-radius: 16px;
+    cursor: pointer;
   }
 
 }
+
+
+.swiper-pagination {
+  // border: 1px solid lawngreen;
+  
+  &-bullet {
+    background-color: #fff;
+    width: 10px;
+    height: 10px;
+    border-radius: 16px;
+    opacity: 0.8;
+    // плавная смена булет кнопок
+    transition: width 200ms ease;
+    
+    &-active {
+      background-color: $back;
+      width: 40px;
+      opacity: 1;
+    }
+  }
+}
+
