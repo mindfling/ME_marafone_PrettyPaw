@@ -134,18 +134,15 @@ iframe {
   align-items: center;
   gap: 4px;
   padding: 10px 20px;
-  // max-width: 177px;
-  // height: 28px;
   font-weight: 1000;
   font-size: 16px;
   line-height: 1;
+  width: max-content;
   color: $back;
   background: $second;
   border-radius: 80px;
   text-decoration: none;
   border: 2px solid $second;
-  // font-family: 'Mulish', sans-serif;
-  // font-style: normal;
   transition: all 200ms ease;
 
   &:after {
@@ -157,6 +154,7 @@ iframe {
   }
   &:hover {
     border: 2px solid $main;
+    color: $main;
   }
   
   @include lg {

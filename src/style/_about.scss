@@ -1,12 +1,27 @@
 .about {
   padding: 80px 0;
-  color: #fff;
+  color: $second;
   
   @include lg {
     padding: 100px 0;
   }
   
   &__container {
+    @include lg {
+      display: grid;
+      grid-template-columns: minmax(460px, 48%) 1fr;
+      gap: 40px 20px;
+      grid-template-areas: 
+        'title title'
+        'slider content';
+    }
+    @include xl {
+      gap: 40px 30px;
+      grid-template-rows: min-content 1fr;
+      grid-template-areas: 
+        'slider title'
+        'slider content';
+    }
   }
   
   &__title {
@@ -19,23 +34,32 @@
     
     @include lg {
       font-size: 52px;
-      margin-bottom: 40px; //
+      grid-area: title;
+      margin-bottom: 0;
     }
   }
   
   
   &__content {
-    display: grid;
-    // todo grid
-    margin-bottom: 13px;
-    padding-bottom: 27px;
-    // svg the paw inside bg content
     background-image: url('../img/about/the-paw.svg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center bottom;
+    margin-bottom: 13px;
+    padding-bottom: 27px;
+    
+    @include md {
+      display: grid;
+      grid-template-columns: 1fr min-content;
+      grid-template-areas:
+        'description list'
+        'link list';
+      gap: 24px 92px;
+      background-position: right bottom;
+    }
     
     @include lg {
+      display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: min-content;
       gap: 40px;
@@ -43,22 +67,20 @@
       padding-bottom: 0;
       grid-area: content;
       grid-template-areas:
-        'description',
-        'list',
+        'description'
+        'list'
         'link';
-      background-position: center;
+      background-position: center bottom;
     }
   
     @include xl {
       gap: 60px;
     }
   }
-    
 
   
   &__description {
     font-family: 'Mulish';
-    font-style: normal;
     font-weight: 300;
     font-size: 16px;
     line-height: 1.4;
@@ -66,20 +88,34 @@
     margin-bottom: 24px;
     
     @include md {
+      grid-area: description;
+      margin-bottom: 0;
     }
     
     @include lg {
-      margin-bottom: 40px;
+      font-size: 20px;      
     }
     
     @include xl {
-      margin-bottom: 60px;
     }
   }
 
   
   &__link {
     margin-bottom: 40px;
+    
+    @include md {
+      grid-area: link;
+      justify-self: start;
+      align-self: flex-start;
+      margin-bottom: 0;
+    }
+    
+    @include lg {
+      justify-self: start;
+      align-self: end;
+      margin-bottom: 0;
+    }
   }  
 
   
@@ -89,24 +125,28 @@
     gap: 20px;
     font-weight: 1000;
     color: $second;
-  }
-  &__count-item {
-    // display: block;
-    // min-width: 120px;
-    // min-height: 55px;
+    line-height: 1;
+    
+    @include md {
+      grid-area: list;
+    }
     
     @include lg {
-      min-width: 200px;
-      min-height: 75px;
+      grid-template-columns: 200px 200px;
+      gap: 30px;
     }
+  }
+
+  &__count-item {
+    display: block;    
   }
   
   &__count {
     line-height: 1;
     text-transform: uppercase;
     color: $second;
-    margin-bottom: 16px;
     font-size: 40px;
+    margin-bottom: 16px;
 
     @include lg {
       font-size: 52px;
@@ -122,33 +162,14 @@
   }
 
   
-  
+  &__picture {
+    @include lg {
+      grid-area: slider;
+    }
+  }
+   
   &__image {
     border-radius: 16px;
-  }
-  
-  &__image-item {
-  }
-  
-  &__image-list {
-  }
-  
-  &__image-wrapper {
-    display: block;
-    // border: 1px solid rebeccapurple;
-    width: 288px;
-    height: 258px;
-    border-radius: 16px;    
-  }
-
-  
-  &__picture {
-  }
-  
-  &__slider {
-  }
-  
-  &__slider-pagination {
   }
 
 }

@@ -42,10 +42,11 @@
       position: absolute;
       bottom: 0;
       right: 50%;
-      height: 0.5px;
-      background-color: $second;
-      transform: translate(50%, 0.25px);
       width: calc(100% - 32px);
+      height: 1px;
+      // height: 0.5px;
+      transform: translate(50%, 0.5px);
+      background-color: $second;
       
       @include sm {
         width: calc(100% - 64px);
